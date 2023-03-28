@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: vwh;
+
+}
+
+h1{
+    background-color: rgb(93,
+        100,
+        102);
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.card {
+    flex-basis: calc(100%/3 - 20px);
+    background-color: rgb(93, 100, 102);
+    color: blanchedalmond;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 27px 3px rgb(214, 231, 217);
+    margin-top: 10px
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-top: 10px 0;
+}
+
