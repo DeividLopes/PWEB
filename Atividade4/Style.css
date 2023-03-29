@@ -1,0 +1,68 @@
+
+body {
+  background: #000000 url(foto1.jpg);
+    background-repeat: no-repeat;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+sans-serif;
+line-height: 1.5;
+}
+
+
+.container {
+margin: 0 auto;
+width: 960px;
+}
+
+article {
+background-color: #FFF;
+border: 1px solid #CCC;
+border-color: #CCC #999 #999 #CCC;
+margin-bottom: 20px;
+padding: 10px;
+}
+
+article h2 {
+border-bottom: 1px dashed #ffffff;
+margin: 0;
+}
+
+article img {
+border: 1px solid #ffffff;
+float: left;
+margin: 10px 10px 0 0;
+padding: 2px;
+width: 160px;
+height: 160px;
+}
+
+header h1 a {
+color: #ffffff;
+text-decoration: none;
+margin-left:250px;
+}
+
+
+.item {
+clear: both;
+}
+
+footer {
+font-size: 12px;
+text-align: center;
+}
+
+section { 
+float: right;
+width: 660px;
+}
+
+aside {
+background-color: #ffffff;
+padding: 10px;
+float: right;
+width: 260px;
+}
+
+
+
+
