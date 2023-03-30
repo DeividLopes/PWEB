@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 500px;
+      }
+
+      @media screen and (max-width: 1920px) {
+        .container {
+          background-color: yellow;
+        }
+        h1::after {
+          content: "Yellow";
+        }
+      }
+
+      @media screen and (max-width: 1366px) {
+        .container {
+          background-color: blue;
+        }
+        h1::after {
+          content: "Blue";
+        }
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container {
+          background-color: red;
+        }
+        h1::after {
+          content: "Red";
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .container {
+          background-color: pink;
+        }
+        h1::after {
+          content: "Pink";
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          background-color: orange;
+        }
+        h1::after {
+          content: "Orange";
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+        .container {
+          background-color: gray;
+        }
+        h1::after {
+          content: "Gray";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 content="" id="título"></h1>
+    </div>
+  </body>
+</html>
