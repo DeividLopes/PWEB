@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de Área de Retângulo</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    
+    <h1>Atividade 1</h1>
+    <form>
+      <label for="base">Base:</label>
+      <input type="number" id="base" name="base" /><br />
+
+      <label for="altura">Altura:</label>
+      <input type="number" id="altura" name="altura" /><br />
+
+      <button type="button" onclick="calcularArea()">Calcular Área</button>
+    </form>
+
+    <p id="resultado"></p>
+
+<h2>Atividade 2</h2>
+<div>
+        <label for="">Nome:</label>
+        <input type="text" id="nome" /><br />
+        <label for="">Banco:</label>
+        <input type="text" id="banco" /><br />
+        <label for="">Número da conta:</label>
+        <input type="number" id="numConta" /><br />
+        <label for="">Saldo:</label>
+        <input type="number" id="saldo" />
+
+        <p>Esta conta é?</p>
+        <button onclick="liberarInputsCorrente()">Corrente</button>
+        <button onclick="liberarInputsPopanca()">Poupança</button><br />
+
+        
+        <div id="Corrente" style="display: none">
+          <label for="">Saldo Especial:</label>
+          <input type="number" id="saldoEspecial" /><br />
+          <button onclick="exibirDadosCorrente()">Criar objeto</button>
+        </div>
+
+       
+        <div id="Poupanca" style="display: none">
+          <label for="">Juros:</label>
+          <input type="number" id="juros" /><br />
+          <label for="">Data vencimento:</label>
+          <input type="date" id="dtVenc" /><br />
+          <button onclick="exibirDadosPoupanca()">Criar objeto</button>
+        </div>
+</body>
+</html>
+
+  </body>
+</html>
