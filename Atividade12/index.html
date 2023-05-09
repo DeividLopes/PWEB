@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <h1 id="texto">Janela Fechada</h1>
+    <img src="janelafechada.png" alt="" id="janela" />
+
+    <script>
+      function QuebrarJanela() {
+        var texto = document.getElementById("texto");
+        texto.innerText = "janela Quebrada";
+        var janela = document.getElementById("janela");
+        janela.src = "janelaquebra.png";
+      }
+
+      function AbrirJanela() {
+        var texto = document.getElementById("texto");
+        texto.innerText = "janela Aberta";
+        var janela = document.getElementById("janela");
+        janela.src = "janelaaberta.png";
+      }
+
+      function FecharJanela() {
+        var texto = document.getElementById("texto");
+        texto.innerText = "janela Fechada";
+        var janela = document.getElementById("janela");
+        janela.src = "janelafechada.png";
+      }
+
+      janela.addEventListener("click", QuebrarJanela);
+      janela.addEventListener("mouseover", AbrirJanela);
+      janela.addEventListener("mouseout", FecharJanela);
+    </script>
+  </head>
+</html>
