@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function tudoMai() {
+        document.getElementById("texto").value = document
+          .getElementById("texto")
+          .value.toUpperCase();
+
+        document.forms.teste.opcao1.checked = true;
+        document.forms.teste.opcao2.checked = false;
+      }
+
+      function tudoMin() {
+        document.getElementById("texto").value = document
+          .getElementById("texto")
+          .value.toLowerCase();
+
+        document.forms.teste.opcao1.checked = false;
+        document.forms.teste.opcao2.checked = true;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="teste">
+      <label>Texto</label>
+      <input type="text" id="texto" />
+      <br />
+      <label>Maíusculas</label>
+      <input
+        type="checkbox"
+        id="opcao1"
+        name="opcao1"
+        value="1"
+        onclick="tudoMai()"
+      />
+      <label>Minúsculas</label>
+      <input
+        type="checkbox"
+        id="opcao2"
+        name="opcao2"
+        value="2"
+        onclick="tudoMin()"
+      />
+    </form>
+  </body>
+</html>
