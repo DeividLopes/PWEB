@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 14</title>
+    <script>
+      function validar() {
+        var formulario = document.meuFormulario;
+        var nome = formulario.nome.value;
+        var email = formulario.elements["email"].value;
+        var comentario = formulario.elements["comentario"].value;
+
+        if (document.getElementById("sim").checked) {
+          var primeiraVez = 1;
+          alert("Volte sempre a essa página!");
+        } else {
+          var primeiraVez = 0;
+          alert("Que bom que você voltou a visitar essa página!");
+        }
+
+        if (nome.length < 10) {
+          alert("O nome deve ter ao menos 10 caracteres");
+        }
+
+        if (!email.includes("@") || !email.includes(".")) {
+          alert("Email inválido");
+        }
+
+        if (comentario.length < 20) {
+          alert("O comentário deve ter pelo menos 20 caracteres");
+        }
+      }
+
+      function limpar() {
+        nome.value = null;
+        email.value = null;
+        comentario.value = null;
+      }
+    </script>
+
+    <style>
+      form {
+        background-color: rgb(0, 174, 255);
+        margin: 0 auto;
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="meuFormulario" onsubmit="validar()">
+      <h1>Formulário Principal</h1>
+      <label>Nome</label><input type="text" id="nome" />
+      <br />
+      <br />
+      <label>E-mail</label><input type="text" id="email" />
+      <br />
+      <br />
+      <label>Comentários</label>
+      <br />
+      <textarea
+        name="comentário"
+        cols="30"
+        rows="10"
+        id="comentario"
+      ></textarea>
+
+      <h2>Pesquisa</h2>
+      <p>Primeira vez nessa página?</p>
+      <label>Sim</label
+      ><input type="radio" name="primeiraVez" id="sim" checked />
+      <br />
+      <label>Não </label><input type="radio" name="primeiraVez" id="nao" />
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="button" value="Limpar" onclick="limpar()" />
+    </form>
+  </body>
+</html>
